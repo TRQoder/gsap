@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+#page1 {
+  height: 100%;
+  width: 100%;
+  background-color: #181818;
+  color: aliceblue;
+  /* background-color: black; */
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+}
+#part2 {
+  display: flex;
+  gap: 25px;
+}
+#page1 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  white-space: nowrap;
+}
+#page2 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(71, 175, 245);
+  padding: 5vw 0;
+}
+#page3 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+#page2 h1 {
+  font-size: 30vw;
+  text-transform: uppercase;
+  color: rgb(3, 3, 0);
+}
+
+#string{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
