@@ -5,7 +5,7 @@ window.addEventListener("mousemove",(dets)=>{
     gsap.to(".cursor",{
         x:dets.x,
         y:dets.y,
-        ease:"elastic.out",
+        ease:"power.out",
         duration:1
     })
 })
