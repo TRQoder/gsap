@@ -1,6 +1,6 @@
 @font-face {
-    font-family: china;
-    src: url(./3856NeueMachina.woff2);
+  font-family: china;
+  src: url(./3856NeueMachina.woff2);
 }
 
 * {
@@ -9,59 +9,73 @@
   box-sizing: border-box;
   font-family: china;
 }
+
 html,
 body {
   height: 100%;
   width: 100%;
+  font-size: 62.5%;
+}
+body{
+  overflow-x: hidden;
 }
 
 section {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: relative;
 }
+
 nav {
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 100px;
+  padding: 3rem 5rem 1rem 5rem;
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
 }
 
 .part2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  gap: 4rem; /* Halved gap value */
 }
+
 nav h1 i {
   rotate: 45deg;
   display: inline-block;
-  font-size: 55px;
+  font-size: 2.7rem; /* Halved font size */
 }
 
 nav h1 {
-  font-size: 50px;
+  font-size: 2.5rem; /* Halved font size */
   display: flex;
-  gap: 20px;
+  gap: 1rem; /* Halved gap value */
 }
 
 nav h4 {
-  font-size: 30px;
+  font-size: 1.5rem; /* Halved font size */
   font-weight: 500;
+  cursor: pointer;
 }
 
 nav button {
-  padding: 22px 40px;
-  font-size: 22px;
+  padding: 1.1rem 2rem; /* Halved padding values */
+  font-size: 1.1rem; /* Halved font size */
   font-weight: 600;
-  border-radius: 5px;
-  border: 1px solid black;
+  border-radius: 0.5rem;
+  border: 0.1rem solid black;
   background-color: transparent;
 }
 
 .center {
-  padding: 70px 100px;
-  height: 80%;
+  height: 83vh;
+  margin: 0 0 3rem 0;
+  padding: 83px 5rem 0.5rem 5rem;
   width: 100%;
   display: flex;
 }
@@ -69,26 +83,38 @@ nav button {
 .center-part1 {
   height: 100%;
   width: 44%;
-  
+  display: flex;
+  direction: column;
+  flex-direction: column;
+  justify-content: center;
 }
-.center-part1 h1{
-    line-height: 1.2;
-    font-size: 110px;
+
+.center-part1 h1 {
+  line-height: 1.08;
+  font-size: 4.22rem; /* Halved font size */
+  height: auto;
 }
-.center-part1 p{
-    font-size: 35px;
-    width: 95%;
-    margin-top: 40px;
-    margin-bottom: 25px;
+
+.center-part1 p {
+  font-size: 1.75rem; /* Halved font size */
+  width: 95%;
+  height: 30%;
+  overflow-y:hidden;
+  text-overflow: ellipsis;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem; /* Halved margin value */
 }
-.center-part1 button{
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    padding: 22px 40px;
-    font-size: 25px;
-    font-weight: 600;
-    border: none ;
+
+.center-part1 button {
+  height: 10%;
+  width: 20rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1.1rem 2rem; /* Halved padding values */
+  font-size: 1.25rem; /* Halved font size */
+  font-weight: 600;
+  border: none;
 }
 
 .center-part2 {
@@ -97,8 +123,169 @@ nav button {
   position: relative;
 }
 
-.center-part2 img{
-    position: absolute;
+.center-part2 img {
+  position: absolute;
+  /* height: 100%; */
+  width: 49rem;
+  right: 0;
+}
+
+.section1bottom {
+  height: 15vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0rem 6rem; /* Halved padding values */
+}
+
+.section1bottom img {
+  height: 7.5rem; /* Halved height */
+}
+
+.section2 .services {
+  padding: 6rem; /* Halved padding value */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem; /* Halved gap value */
+  margin-top: 1.5rem; /* Halved margin value */
+}
+
+.services h3 {
+  background-color: #9ae975;
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.services p {
+  width: 40%;
+  font-size: 1.1rem; /* Halved font size */
+  font-weight: 550;
+}
+
+.container {
+  height: 83%;
+  width: 100%;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.elem {
+  flex-shrink: 0;
+  height: 20rem;
+  width: 48%;
+  border: 4px solid black;
+  border-radius: 5rem;
+  box-shadow: 0 0.7rem 0 rgb(48, 46, 46);
+  padding: 3rem;
+  display: flex;
+}
+
+.elem-part1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.elem-part1 h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  width: 70%;
+  padding: 0 0.25rem;
+  border-radius: 1rem;
+  background-color: #9ae975;
+}
+
+.elem-part1 h4 {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  gap: 1rem;
+}
+
+.elem-part1 h4 i {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+
+.elem-part2 {
+  height: 100%;
+  width: 50%;
+}
+
+.elem-part2 img {
+  height: 100%;
+}
+
+/* media_queries */
+
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 35%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+  nav{
+    flex-direction: column;
+  }
+  nav .part2{
+    display: none;
+  }
+  .center{
     height: 100%;
-    right: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3.6rem;
+  }
+
+  .center-part1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+}
+
+/* utility */
+
+.black {
+  background-color: black;
+}
+.black .elem-part1 h2 {
+  background-color: #ffffff;
+}
+
+.black .elem-part1 h4 {
+  color: white;
+}
+.black .elem-part1 h4 i {
+  color: black;
+  background-color: white;
 }
